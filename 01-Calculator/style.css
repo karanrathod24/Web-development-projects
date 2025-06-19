@@ -1,0 +1,74 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+/* Calculator container */
+.calculator {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 340px;
+  border: 1px double #2c3e50;
+}
+
+/* Display screen */
+.display {
+  width: 100%;
+  height: 60px;
+  font-size: 28px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #2c3e50;
+  color: #ffffff;
+}
+
+/* Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  transform: scaleX(1.1);
+}
+
+/* Buttons style */
+.btn {
+  background: #80e0f8;
+  border: none;
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #2c3e50;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #dcdde1;
+}
+
+
+.equal:hover {
+  background: #2980b9;
+}
+
+/* Zero button spanning two columns */
+.zero {
+  grid-column: span 2;
+}
